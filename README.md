@@ -1,2 +1,2 @@
 # WinDev
-Win32 Development
+Windows Application Development with Win32
