@@ -27,7 +27,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
     hBrush = (HBRUSH)GetStockObject(WHITE_BRUSH);
     assert(hBrush);
 
-    hIcon = LoadIconA(NULL, IDI_APPLICATION);
+    hIcon = LoadIcon(NULL, IDI_APPLICATION);
     assert(hIcon);
 
     hIconSm = LoadIcon(NULL, IDI_APPLICATION);
