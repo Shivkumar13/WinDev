@@ -7,6 +7,9 @@
 
 LRESULT CALLBACK WndProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam);
 
+void AddMenus(HWND);
+HMENU hMenu;
+
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nShowCmd)
 {
     static TCHAR szClassName[] = TEXT("SHIV-SAN APP");
@@ -72,9 +75,24 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 {
     switch(uMsg)
     {
+        case WM_CREATE:
+            AddMenus(hWnd);
+            break;
+            
         case WM_DESTROY:
             PostQuitMessage(0);
             break;
     }
     return(DefWindowProc(hWnd, uMsg, wParam, lParam));
 }
+
+void AddMenus(HWND hWnd)
+{
+    hMenu = CreateMenu();
+    
+    AppendMenu(hMenu, MF_STRING, 1, "File");
+    
+    SetMenu(hWnd, hMenu);
+
+}
+
