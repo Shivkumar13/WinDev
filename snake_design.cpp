@@ -69,23 +69,6 @@ VOID OnPaint(HDC hdc)
     graphics.DrawLine(&pen, 70, 50, 50, 55);
     graphics.DrawLine(&pen, 70, 50, 50, 40);
 
-    //graphics.DrawLine(&pen, 100, 39, 101, 44);
-    //graphics.DrawLine(&pen, 100, 39, 101, 44);
-    //graphics.DrawLine(&pen, 100, 39, 101, 44);
-    //graphics.DrawLine(&pen, 100, 39, 101, 44);
-    //graphics.DrawLine(&pen, 100, 39, 101, 44);
-    //graphics.DrawLine(&pen, 100, 39, 101, 44);
-    //graphics.DrawLine(&pen, 100, 39, 101, 44);
-    //graphics.DrawLine(&pen, 100, 39, 101, 44);
-    //graphics.DrawLine(&pen, 100, 39, 101, 44);
-    //graphics.DrawLine(&pen, 100, 39, 101, 44);
-    //graphics.DrawLine(&pen, 100, 39, 101, 44);
-    //graphics.DrawLine(&pen, 100, 39, 101, 44);
-    //graphics.DrawLine(&pen, 100, 39, 101, 44);
-    //graphics.DrawLine(&pen, 100, 39, 101, 44);
-
-
-    //graphics.DrawLine(&pen, points2, 6, 0.5f);
 }
 
 VOID DrawArc(HDC hdc)
